@@ -23,7 +23,7 @@ pianoKeys.forEach(key => {
 });
 
 const handleVolume = (e) => {
-    audio.volume = 1; // passing the range slider value as an audio volume
+    audio.volume = e.target.value; // passing the range slider value as an audio volume
 }
 
 const showHideKeys = () => {
